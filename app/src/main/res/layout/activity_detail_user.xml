@@ -117,7 +117,9 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_baseline_favorite_border_24"
         app:fabSize="mini"
+        app:backgroundTint="@color/black"
         android:backgroundTint="@color/white"
+
         android:layout_marginTop="8dp"
         android:layout_marginRight="8dp"
         app:layout_constraintTop_toTopOf="parent"

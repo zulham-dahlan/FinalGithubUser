@@ -9,7 +9,7 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.core.widget.doOnTextChanged
+import androidx.core.widget.doAfterTextChanged
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
@@ -42,8 +42,8 @@ class MainActivity : AppCompatActivity() {
                 }
             })
 
-        binding.edtSearch.edtSearchText.doOnTextChanged { text, _, _, _ ->
-            searchGithubUser(text.toString())
+        binding.edtSearch.edtSearchText.doAfterTextChanged {
+            searchGithubUser(it.toString())
         }
     }
 

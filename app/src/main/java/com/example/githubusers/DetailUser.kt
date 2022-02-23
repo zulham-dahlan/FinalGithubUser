@@ -68,7 +68,7 @@ class DetailUser : AppCompatActivity() {
 
     private fun setUserData(){
         with(binding){
-            tvUsername.text = user.username
+            tvUsername.text = user.username ?: "-"
             tvFullname.text = user.fullname ?: "-"
             tvCompany.text = user.company ?: "-"
             tvLocation.text = user.location ?: "-"
