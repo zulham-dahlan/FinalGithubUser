@@ -70,7 +70,6 @@ class DetailUser : AppCompatActivity() {
         with(binding){
             tvUsername.text = user.username
             tvFullname.text = user.fullname ?: "-"
-            tvRepository.text = getString(R.string.repository, user.repository ?: "-")
             tvCompany.text = user.company ?: "-"
             tvLocation.text = user.location ?: "-"
 
